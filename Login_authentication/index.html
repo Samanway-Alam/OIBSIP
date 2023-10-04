@@ -1,57 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Login / Sign Up Form</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./src/main.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
-    
-        <div class="container">
-            <form class="form" id="login">
-                <h1 class="form__title"><i>Login</i></h1>
-                <div class="form__message form__message--error"></div>
-                <div class="form__input-group">
-                    <input type="text" class="form__input" autofocus placeholder="Username or email">
-                    <div class="form__input-error-message"></div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="form__input-group">
-                    <input type="password" class="form__input" autofocus placeholder="Password">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <button class="form__button" type="submit">Continue</button>
-                <p class="form__text">
-                    <a href="#" class="form__link">Forgot your password?</a>
-                </p>
-                <p class="form__text">
-                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
-                </p>
-            </form>
-            <form class="form form--hidden" id="createAccount">
-                <h1 class="form__title">Create Account</h1>
-                <div class="form__message form__message--error"></div>
-                <div class="form__input-group">
-                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <div class="form__input-group">
-                    <input type="text" class="form__input" autofocus placeholder="Email Address">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <div class="form__input-group">
-                    <input type="password" class="form__input" autofocus placeholder="Password">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <div class="form__input-group">
-                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
-                    <div class="form__input-error-message"></div>
-                </div>
-                <button class="form__button" type="submit">Continue</button>
-                <p class="form__text">
-                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
-                </p>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
             </form>
         </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>HI!!again?</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome!!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./src/main.js"></script>
 </body>
+
+</html>
